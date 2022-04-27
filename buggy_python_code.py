@@ -24,7 +24,8 @@ class RunBinSh(object):
         return (subprocess.Popen, (('/bin/sh',),))
 
 def import_urlib_version(version):
-    import "urllib%s as urllib" % version
+    var = "urllib%s as urllib" % version
+    import var
 
 @app.route('/')
 def index():
